@@ -30,7 +30,7 @@ but you're limited to a single JavaScript _expression_.
 
 In addition to this technical limitation, you also need to consider that templates should only be concerned with displaying data to the user, not perform logic computations.
 
-To do something more a single expression, and to have more declarative templates, that you use a **computed property**.
+To do something more than a single expression, and to have more declarative templates, then you use a **computed property**.
 
 Computed properties are defined in the `computed` property of the Vue component:
 
@@ -121,6 +121,6 @@ export default {
 </script>
 ```
 
-It will render once, and then it will not be updated even when the component re-renders. Just on a page refresh, when the Vue component is quit and reinitialized.
+It will render once, and then it will not be updated even when the component re-renders. Just on a page refresh, when the Vue component is destroyed and reinitialized.
 
 In this case, a method is better suited for your needs.
